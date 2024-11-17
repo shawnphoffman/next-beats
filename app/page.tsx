@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react'
 import dynamic from 'next/dynamic'
 import { X, Save, Settings } from 'lucide-react'
+import { GitHubIcon } from '@/components/GitHubIcon'
 import { soundEffects, DEFAULT_CHANNELS } from '@/lib/lofi_data'
 import ChannelButtons from '@/components/ChannelButtons'
 import PlaybackControls from '@/components/PlaybackControls'
@@ -509,42 +510,20 @@ const EnhancedLofiPlayer = () => {
     }
   }
 
-  const handleEffectVolumeChange = (effectId: string, volume: number) => {
-    const newVolumes = { ...effectVolumes, [effectId]: volume }
-    setEffectVolumes(newVolumes)
-
-    const audio = audioRefs.current[effectId]?.audio
-    if (audio) {
-      audio.volume = volume * effectsVolume
-    }
-  }
-
-  const handleAddCustomEffect = (effect: CustomSoundEffect) => {
-    setCustomEffects((prev) => [...prev, effect])
-  }
-
-  const handleRemoveCustomEffect = (effectId: string) => {
-    setCustomEffects((prev) => prev.filter((effect) => effect.id !== effectId))
-
-    // Stop and remove the audio if it's playing
-    const audio = audioRefs.current[effectId]?.audio
-    if (audio) {
-      audio.pause()
-      delete audioRefs.current[effectId]
-    }
-
-    setActiveEffects((prev) => {
-      const next = new Set(prev)
-      next.delete(effectId)
-      return next
-    })
-  }
-
   return (
     <div
       className={styles['theme-container']}
       data-theme={mounted ? currentTheme : 'dark'}
     >
+      <a
+        href="https://github.com/btahir/next-beats"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed right-4 top-4 hidden text-[var(--lofi-text-primary)] transition-opacity hover:opacity-70 lg:block"
+        aria-label="View source on GitHub"
+      >
+        <GitHubIcon />
+      </a>
       <div className="flex min-h-screen w-full items-start justify-center bg-[var(--lofi-background)] p-4 transition-colors duration-500 sm:items-center sm:p-8">
         <div className="w-full max-w-4xl space-y-8 py-4">
           {/* Retro TV */}
