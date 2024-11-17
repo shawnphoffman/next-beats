@@ -70,7 +70,7 @@ const PlaybackControls: React.FC<PlaybackControlsProps> = ({
           step={0.01}
           value={volume}
           onChange={(e) => setVolume(parseFloat(e.target.value))}
-          className="h-1 w-full cursor-pointer accent-[var(--lofi-accent)] rounded-lg bg-[var(--lofi-card-hover)]"
+          className="w-full cursor-pointer accent-[var(--lofi-accent)] rounded-lg bg-[var(--lofi-card-hover)]"
         />
       </div>
     </div>
