@@ -128,7 +128,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The open source community
 - Coffee ☕
 
-## ⭐ Sponsored By
+## ⚡ From the Creators of
 
 <p align="center">
   <a href="https://you-tldr.com">
