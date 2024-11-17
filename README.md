@@ -62,7 +62,7 @@ Each effect has its own volume control, so you can mix them perfectly with your 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/next-beats.git
+git clone https://github.com/btahir/next-beats.git
 cd next-beats
 ```
 
