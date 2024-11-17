@@ -74,16 +74,6 @@ const PlaybackControls: React.FC<PlaybackControlsProps> = ({
             // Prevent default touch behavior
             e.stopPropagation()
           }}
-          onTouchMove={(e) => {
-            // Get the touch position relative to the input
-            const touch = e.touches[0]
-            const input = e.target as HTMLInputElement
-            const rect = input.getBoundingClientRect()
-            const pos = (touch.clientX - rect.left) / rect.width
-            // Clamp the value between 0 and 1
-            const newVolume = Math.max(0, Math.min(1, pos))
-            setVolume(newVolume)
-          }}
           className="w-full cursor-pointer accent-[var(--lofi-accent)] rounded-lg bg-[var(--lofi-card-hover)] touch-none"
         />
       </div>
