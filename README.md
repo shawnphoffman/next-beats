@@ -97,6 +97,7 @@ yarn dev
 - [Next.js](https://nextjs.org/) - React framework
 - [TypeScript](https://www.typescriptlang.org/) - For type safety
 - [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [Shadcn UI](https://ui.shadcn.com/) - For UI components
 - [React Player](https://github.com/cookpete/react-player) - For YouTube playback
 
 ## 🤝 Contributing
@@ -119,6 +120,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The open source community
 - Coffee ☕
 
----
+## ⭐ Sponsored By
 
-Made with ❤️ by [Your Name]
+<p align="center">
+  <a href="https://you-tldr.com">
+    <img src="you-tldr-banner.webp" alt="You-TLDR Banner" width="600px" />
+  </a>
+</p>
+
+Check out [You-TLDR](https://you-tldr.com) - AI-powered YouTube summaries that save you time!
