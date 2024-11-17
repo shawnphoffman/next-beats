@@ -2,9 +2,7 @@
 
 A modern, customizable lofi music player built with Next.js and TypeScript. Perfect for coding, studying, or just chilling.
 
-<p align="center">
-  <img src="demo.mov" alt="NextBeats Demo" width="800px" />
-</p>
+https://github.com/bilal-tahir-Invozone/next-beats/assets/demo.mov
 
 ## ✨ Features
 
