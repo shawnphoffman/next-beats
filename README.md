@@ -1,4 +1,4 @@
-# 🎵 NextBeats
+# <img src="app/apple-icon.png" alt="NextBeats Icon" width="24" height="24" style="vertical-align: middle;"> NextBeats
 
 A modern, customizable lofi music player built with Next.js and TypeScript. Perfect for coding, studying, or just chilling.
 
