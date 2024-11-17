@@ -54,7 +54,7 @@ const PlaybackControls: React.FC<PlaybackControlsProps> = ({
     {/* Right Side - Volume Control */}
     <div className="flex min-w-[90px] items-center space-x-1 sm:min-w-[110px] sm:space-x-2">
       <button
-        onClick={() => setVolume(volume === 0 ? 1 : 0)}
+        onClick={() => setVolume(volume === 0 ? 0.5 : 0)}
         className="hidden sm:block rounded-[var(--lofi-button-radius)] px-1 py-1.5 text-[var(--lofi-text-primary)] shadow-[var(--lofi-card-shadow)] hover:bg-[var(--lofi-card-hover)] sm:p-2"
       >
         {volume === 0 ? (
@@ -69,7 +69,7 @@ const PlaybackControls: React.FC<PlaybackControlsProps> = ({
         type="range"
         min={0}
         max={1}
-        step={0.1}
+        step={0.01}
         value={volume}
         onChange={(e) => setVolume(parseFloat(e.target.value))}
         className="h-1 w-full cursor-pointer accent-[var(--lofi-accent)] rounded-lg bg-[var(--lofi-card-hover)]"
