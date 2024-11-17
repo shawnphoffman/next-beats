@@ -124,7 +124,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <p align="center">
   <a href="https://you-tldr.com">
-    <img src="youtldr-banner.webp" alt="You-TLDR Banner" width="600px" />
+    <img src="youtldr-banner.png" alt="You-TLDR Banner" width="600px" />
   </a>
 </p>
 
