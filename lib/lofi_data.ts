@@ -62,10 +62,10 @@ export const soundEffects: SoundEffect[] = [
     file: '/sounds/cafe.mp3',
   },
   {
-    id: 'people',
-    name: 'Distant Voices',
+    id: 'fireplace',
+    name: 'Fireplace Crackling',
     icon: Users,
-    file: '/sounds/people.mp3',
+    file: '/sounds/fireplace.mp3',
   },
   {
     id: 'keyboard',
