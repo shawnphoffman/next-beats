@@ -1,5 +1,5 @@
 import React from 'react'
-import { X, RotateCcw } from 'lucide-react'
+import { X, RotateCcw, ChevronDown } from 'lucide-react'
 import { themes } from '@/lib/lofi-themes'
 
 interface SettingsModalProps {
@@ -60,18 +60,26 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             >
               Theme
             </label>
-            <select
-              id="theme-select"
-              value={currentTheme}
-              onChange={(e) => setCurrentTheme(e.target.value)}
-              className="w-full rounded-[var(--lofi-button-radius)] border border-[var(--lofi-border)] bg-[var(--lofi-card-hover)] px-3 py-2 text-[var(--lofi-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--lofi-accent)]"
-            >
-              {Object.values(themes).map((theme) => (
-                <option key={theme.id} value={theme.id}>
-                  {theme.name}
-                </option>
-              ))}
-            </select>
+            <div className="relative">
+              <select
+                id="theme-select"
+                value={currentTheme}
+                onChange={(e) => setCurrentTheme(e.target.value)}
+                className="w-full appearance-none rounded-[var(--lofi-button-radius)] border border-[var(--lofi-border)] bg-[var(--lofi-card-hover)] px-3 py-2 text-[var(--lofi-text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--lofi-accent)]"
+              >
+                {Object.values(themes).map((theme) => (
+                  <option key={theme.id} value={theme.id}>
+                    {theme.name}
+                  </option>
+                ))}
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                <ChevronDown
+                  size={16}
+                  className="text-[var(--lofi-text-primary)]"
+                />
+              </div>
+            </div>
           </div>
 
           <div className="pt-4">
