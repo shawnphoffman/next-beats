@@ -69,10 +69,12 @@ cd next-beats
 2. Install dependencies:
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 # or
-yarn install
+yarn install --legacy-peer-deps
 ```
+
+> **Important Note**: We use `--legacy-peer-deps` because the project contains dependencies that require different versions of React (React 16 and React 19). This flag allows npm to bypass peerDependency conflicts and install the packages anyway. While this isn't ideal for production, it's necessary for development until all dependencies are updated to support React 19.
 
 3. Run the development server:
 
