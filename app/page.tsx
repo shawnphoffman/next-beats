@@ -624,7 +624,7 @@ const EnhancedLofiPlayer = () => {
 
             {/* Controls Container */}
             <div className="space-y-4">
-              <div className="flex items-center justify-between px-2">
+              <div className="flex items-center justify-between gap-3">
                 {/* Left Side - Playback Controls */}
                 {mounted && (
                   <PlaybackControls
@@ -638,22 +638,24 @@ const EnhancedLofiPlayer = () => {
 
                 {/* Right Side - Channel Management */}
                 {mounted && (
-                  <ChannelManagement
-                    isAddingChannel={isAddingChannel}
-                    setIsAddingChannel={setIsAddingChannel}
-                    newChannel={newChannel}
-                    setNewChannel={setNewChannel}
-                    saveChannel={handleSaveChannel}
-                    currentTheme={currentTheme}
-                    currentChannel={currentChannel}
-                    handleEditChannel={handleEditChannel}
-                    setShowDeleteConfirm={setShowDeleteConfirm}
-                  />
+                  <div className="flex shrink-0 items-center">
+                    <ChannelManagement
+                      isAddingChannel={isAddingChannel}
+                      setIsAddingChannel={setIsAddingChannel}
+                      newChannel={newChannel}
+                      setNewChannel={setNewChannel}
+                      saveChannel={handleSaveChannel}
+                      currentTheme={currentTheme}
+                      currentChannel={currentChannel}
+                      handleEditChannel={handleEditChannel}
+                      setShowDeleteConfirm={setShowDeleteConfirm}
+                    />
+                  </div>
                 )}
               </div>
 
               {/* Progress Bar */}
-              <div className="px-2">
+              <div className="">
                 <div className="h-1 w-full overflow-hidden rounded-full bg-[var(--lofi-card-hover)]">
                   <div
                     className="h-full bg-[var(--lofi-accent)] transition-all duration-300"
