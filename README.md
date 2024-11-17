@@ -17,6 +17,39 @@ A modern, customizable lofi music player built with Next.js and TypeScript. Perf
 - 💾 Persistent settings with localStorage
 - 📱 Responsive design for all devices
 
+## 🎵 Customization
+
+### Adding Your Own Channels
+
+Make NextBeats truly yours by adding your favorite lofi streams:
+
+1. Click the '+' button in the channel list
+2. Paste any YouTube lofi stream URL
+3. Add a name, description, and creator
+4. Save and enjoy your custom channel!
+
+All your custom channels are saved locally and persist between sessions.
+
+### Mixing Sound Effects
+
+Create the perfect atmosphere by mixing different ambient sounds:
+
+- ☕ Cafe ambience
+- ⌨️ Keyboard typing
+- 🔥 Fireplace crackling
+- 🌧️ Rain sounds
+- 🌫️ White noise
+- 🌪️ Wind ambience
+
+Add your own sound effects:
+
+1. Click the '+' button in the sound effects panel
+2. Enter a name for your effect
+3. Provide a URL to your sound file (supports MP3, WAV)
+4. Adjust the volume to your liking
+
+Each effect has its own volume control, so you can mix them perfectly with your music. All custom effects are saved locally for your next session!
+
 ## 🚀 Getting Started
 
 ### Prerequisites
