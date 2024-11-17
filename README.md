@@ -57,6 +57,11 @@ Each effect has its own volume control, so you can mix them perfectly with your 
 - Node.js (v16 or higher)
 - npm or yarn
 
+### Known Limitations
+
+- **Mobile Volume Control**: Due to security restrictions in mobile browsers (Safari, Chrome on iOS, etc.), programmatic volume control may not work. Users will need to use their device's physical volume buttons to adjust the audio level.
+- This is a limitation imposed by mobile browsers to prevent unwanted audio experiences and cannot be circumvented via JavaScript.
+
 ### Installation
 
 1. Clone the repository:
