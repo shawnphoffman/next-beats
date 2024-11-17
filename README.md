@@ -45,7 +45,7 @@ Add your own sound effects:
 
 1. Click the '+' button in the sound effects panel
 2. Enter a name for your effect
-3. Provide a URL to your sound file (supports MP3, WAV)
+3. Provide any YouTube URL to add your sound file
 4. Adjust the volume to your liking
 
 Each effect has its own volume control, so you can mix them perfectly with your music. All custom effects are saved locally for your next session!
