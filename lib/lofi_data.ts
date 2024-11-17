@@ -1,4 +1,4 @@
-import { Cloud, Wind, Coffee, Users, Monitor, Power } from 'lucide-react'
+import { Cloud, Wind, Coffee, Flame, Monitor, Power } from 'lucide-react'
 import { Channel, SoundEffect } from '@/types/lofi'
 
 export const DEFAULT_CHANNELS: Channel[] = [
@@ -64,7 +64,7 @@ export const soundEffects: SoundEffect[] = [
   {
     id: 'fireplace',
     name: 'Fireplace Crackling',
-    icon: Users,
+    icon: Flame,
     file: '/sounds/fireplace.mp3',
   },
   {
