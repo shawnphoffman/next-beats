@@ -1,6 +1,7 @@
 # <img src="public/icon.svg" alt="NextBeats Icon" width="28" height="28" style="vertical-align: middle;"> NextBeats
 
 A modern, customizable lofi music player built with Next.js and TypeScript. Perfect for coding, studying, or just chilling.
+Try it out: [demo](https://nextbeats.vercel.app/).
 
 <p align="center">
   <img src="demo.gif" alt="NextBeats Demo" width="800px" />
