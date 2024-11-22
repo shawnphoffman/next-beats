@@ -97,7 +97,21 @@ bun dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to start vibing! 🎧
 
-## 🎮 Usage
+### 🐳 Using Docker
+
+You can also run NextBeats using Docker:
+
+```bash
+# Build the Docker image
+docker build -t next-beats .
+
+# Run the container
+docker run -p 3000:3000 next-beats
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to start vibing! 🎧
+
+### 🎮 Usage
 
 - **Channel Navigation**: Use the channel buttons to switch between different lofi streams
 - **Sound Effects**: Toggle various ambient sounds (rain, cafe, birds, etc.) to create your perfect atmosphere
