@@ -29,12 +29,14 @@ const PlaybackControls: React.FC<PlaybackControlsProps> = ({
     <div className="flex shrink-0 items-center space-x-1">
       <button
         onClick={() => changeChannel('prev')}
+        aria-label="Previous Channel"
         className="rounded-[var(--lofi-button-radius)] pl-0 pr-1 py-1.5 text-[var(--lofi-text-primary)] shadow-[var(--lofi-card-shadow)] hover:bg-[var(--lofi-card-hover)] sm:px-2"
       >
         <SkipBack size={14} className="sm:h-4 sm:w-4" />
       </button>
       <button
         onClick={() => setIsPlaying(!isPlaying)}
+        aria-label={isPlaying ? 'Pause' : 'Play'}
         className="rounded-[var(--lofi-button-radius)] px-1 py-1.5 text-[var(--lofi-text-primary)] shadow-[var(--lofi-card-shadow)] hover:bg-[var(--lofi-card-hover)] sm:p-2"
       >
         {isPlaying ? (
@@ -45,6 +47,7 @@ const PlaybackControls: React.FC<PlaybackControlsProps> = ({
       </button>
       <button
         onClick={() => changeChannel('next')}
+        aria-label="Next Channel"
         className="rounded-[var(--lofi-button-radius)] px-1 py-1.5 text-[var(--lofi-text-primary)] shadow-[var(--lofi-card-shadow)] hover:bg-[var(--lofi-card-hover)] sm:p-2"
       >
         <SkipForward size={14} className="sm:h-4 sm:w-4" />
@@ -53,6 +56,7 @@ const PlaybackControls: React.FC<PlaybackControlsProps> = ({
       <div className="flex min-w-[90px] items-center space-x-1 sm:min-w-[110px] sm:space-x-2">
         <button
           onClick={() => setVolume(volume === 0 ? 0.5 : 0)}
+          aria-label="Toggle Volume"
           className="hidden sm:block rounded-[var(--lofi-button-radius)] px-1 py-1.5 text-[var(--lofi-text-primary)] shadow-[var(--lofi-card-shadow)] hover:bg-[var(--lofi-card-hover)] sm:p-2"
         >
           {volume === 0 ? (

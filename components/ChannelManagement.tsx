@@ -36,18 +36,21 @@ const ChannelManagement: React.FC<ChannelManagementProps> = ({
       <div className="flex items-center space-x-2">
         <button
           onClick={() => handleEditChannel(currentChannel)}
+          aria-label={`Edit Channel ${currentChannel}`}
           className="rounded-[var(--lofi-button-radius)] bg-[var(--lofi-button-bg)] p-2 text-[var(--lofi-button-text)] shadow-[var(--lofi-card-shadow)] transition-colors hover:bg-[var(--lofi-button-hover)]"
         >
           <Edit2 size={16} />
         </button>
         <button
           onClick={() => setShowDeleteConfirm(currentChannel)}
+          aria-label={`Delete Channel ${currentChannel}`}
           className="rounded-[var(--lofi-button-radius)] bg-[var(--lofi-button-bg)] p-2 text-[var(--lofi-button-text)] shadow-[var(--lofi-card-shadow)] transition-colors hover:bg-[var(--lofi-button-hover)]"
         >
           <X size={16} />
         </button>
         <button
           onClick={() => setIsAddingChannel(true)}
+          aria-label="Add New Channel"
           className="rounded-[var(--lofi-button-radius)] bg-[var(--lofi-button-bg)] p-2 text-[var(--lofi-button-text)] shadow-[var(--lofi-card-shadow)] transition-colors hover:bg-[var(--lofi-button-hover)]"
         >
           <Plus size={16} />

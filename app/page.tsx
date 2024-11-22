@@ -578,6 +578,7 @@ const EnhancedLofiPlayer = () => {
               <div className="absolute top-0 right-0 flex justify-center">
                 <button
                   onClick={() => setIsSettingsOpen(true)}
+                  aria-label="Settings"
                   className="rounded-full bg-[var(--lofi-button-bg)] p-2 text-[var(--lofi-button-text)] transition-colors hover:bg-[var(--lofi-button-hover)]"
                 >
                   <Settings size={18} />
