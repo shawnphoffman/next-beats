@@ -184,6 +184,7 @@ const SoundEffectsControls: React.FC<SoundEffectsControlsProps> = ({
               [effect.id]: parseFloat(e.target.value),
             })
           }
+          aria-label="Effect Volume"
           className="w-full focus:outline-none [&::-moz-range-thumb]:bg-[var(--lofi-accent)] [&::-webkit-slider-thumb]:bg-[var(--lofi-accent)]"
           style={{
             accentColor: 'var(--lofi-accent)',
@@ -234,6 +235,7 @@ const SoundEffectsControls: React.FC<SoundEffectsControlsProps> = ({
             step={0.01}
             value={effectsVolume}
             onChange={(e) => setEffectsVolume(parseFloat(e.target.value))}
+            aria-label="Effect Master Volume"
             className="w-32 focus:outline-none sm:w-20 [&::-moz-range-thumb]:bg-[var(--lofi-accent)] [&::-webkit-slider-thumb]:bg-[var(--lofi-accent)]"
             style={{
               accentColor: 'var(--lofi-accent)',

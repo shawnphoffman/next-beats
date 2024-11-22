@@ -74,6 +74,7 @@ const PlaybackControls: React.FC<PlaybackControlsProps> = ({
             // Prevent default touch behavior
             e.stopPropagation()
           }}
+          aria-label="Channel Volume"
           className="w-full cursor-pointer accent-[var(--lofi-accent)] rounded-lg bg-[var(--lofi-card-hover)] touch-none"
         />
       </div>
